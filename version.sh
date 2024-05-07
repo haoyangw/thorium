@@ -62,7 +62,7 @@ cd ${CR_SRC_DIR} &&
 
 git clean -ffd &&
 
-gclient sync --with_branch_heads --with_tags -f -R -D &&
+gclient sync --no-history --shallow --with_branch_heads --with_tags -f -R -D &&
 
 gclient runhooks &&
 
